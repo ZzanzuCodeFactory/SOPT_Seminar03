@@ -11,6 +11,6 @@ package com.tistory.dayglo.sopt180414
 data class KakaoData(
     var profile : Int,
     var name : String,
-    var preView : String,
+    var preview : String,
     var date : String
 )

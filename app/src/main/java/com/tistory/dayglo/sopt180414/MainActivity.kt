@@ -2,6 +2,8 @@ package com.tistory.dayglo.sopt180414
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.widget.LinearLayoutManager
+import kotlinx.android.synthetic.main.activity_main.*
 
 /*
 *
@@ -33,5 +35,9 @@ class MainActivity : AppCompatActivity() {
         kakaoItems.add(KakaoData(R.drawable.img09, "임태완", "채팅 프리뷰임!", "오후 11:19"))
         kakaoItems.add(KakaoData(R.drawable.img10, "안도익", "채팅 프리뷰임@", "오후 12:19"))
 
+
+        kakaoAdapter = KakaoAdapter(kakaoItems)
+        main_rv.layoutManager = LinearLayoutManager(this)
+        main_rv.adapter = kakaoAdapter
     }
 }
